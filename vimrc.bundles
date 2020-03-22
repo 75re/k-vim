@@ -29,6 +29,9 @@ call plug#begin('~/.vim/bundle')
 
 " 移动光标到插件名上, 使用'#'快速跳转到每个插件的配置处
 
+
+Plug '75re/vim-vookmark'
+
 " syntastic
 if v:version < 800
     Plug 'scrooloose/syntastic'
@@ -91,7 +94,7 @@ Plug 'kshenoy/vim-signature'
 Plug 'terryma/vim-expand-region'
 " 多光标选中编辑
 " multiplecursors
-Plug 'terryma/vim-multiple-cursors'
+"Plug 'terryma/vim-multiple-cursors'
 
 " quick locate file or function
 " 文件搜索
@@ -770,7 +773,7 @@ endif
 
 " 标签导航
 " tagbar {{{
-    nmap <F9> :TagbarToggle<CR>
+    nmap <leader>t :TagbarToggle<CR>
     let g:tagbar_autofocus = 1
     " let g:tagbar_autoshowtag = 1
     " let g:tagbar_show_visibility = 1
